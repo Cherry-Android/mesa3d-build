@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#Stop when error
+set -e 
+
 SRC_PATH="$1"
 BUILD_PATH="$2"
 MESA_CLC_PATH="$3"
