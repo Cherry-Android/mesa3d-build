@@ -20,7 +20,8 @@ meson setup \
 	"${SRC_PATH}"
 meson compile -C "${BUILD_PATH}"
 
-echo "Build mesa_clc successfully!"
 mkdir -p "${BUILD_PATH}/bin"
 cp "${BUILD_PATH}/src/compiler/clc/mesa_clc" "${BUILD_PATH}/bin"
+cp "${BUILD_PATH}/src/panfrost/clc/panfrost_compile" "${BUILD_PATH}/bin"
 ls ${BUILD_PATH}/bin/mesa_clc
+ls ${BUILD_PATH}/bin/panfrost_compile

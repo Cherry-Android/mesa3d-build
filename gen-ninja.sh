@@ -28,13 +28,15 @@ meson setup \
 	-Dgbm=enabled \
 	-Dgbm-backends-path=/apex/com.android.hardware.graphics.allocator.minigbm_dmabuf/lib64 \
 	-Degl=enabled \
-    -Dllvm=disabled \
+	-Dllvm=disabled \
 	-Dcpp_rtti=false \
 	-Dmesa-clc=system \
+	-Dtools= \
 	-Dallow-fallback-for=libdrm \
 	-Dvulkan-drivers= \
 	-Degl-lib-suffix=_mesa \
 	-Dgles-lib-suffix=_mesa \
+	-Dprecomp-compiler=system \
 	--reconfigure \
 	--wipe \
     "${BUILD_PATH}" \
