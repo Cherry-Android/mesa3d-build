@@ -22,6 +22,6 @@ meson compile -C "${BUILD_PATH}"
 
 mkdir -p "${BUILD_PATH}/bin"
 cp "${BUILD_PATH}/src/compiler/clc/mesa_clc" "${BUILD_PATH}/bin"
-cp "${BUILD_PATH}/src/panfrost/clc/panfrost_compile" "${BUILD_PATH}/bin"
+cp "${BUILD_PATH}/src/compiler/spirv/vtn_bindgen2" "${BUILD_PATH}/bin"
 ls ${BUILD_PATH}/bin/mesa_clc
-ls ${BUILD_PATH}/bin/panfrost_compile
+ls ${BUILD_PATH}/bin/vtn_bindgen2
