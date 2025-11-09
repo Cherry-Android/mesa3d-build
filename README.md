@@ -16,5 +16,7 @@ How to update:
 
 
 - When running gen-ninja.sh script file
+  
   ./gen-ninja.sh <SRC_PATH> <BUILD_PATH> <MESA_CLC_PATH> <NDK_PATH>
+  
   (<MESA_CLC_PATH> is defined /../../bin) to avoid some issue
